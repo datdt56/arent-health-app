@@ -24,7 +24,7 @@ Users can maintain a health diary to record their thoughts, progress, and any ot
 ### Operation Verification
 To run and test the Health App locally, follow these steps:
 
-- Clone the repository: git clone https://github.com/datdt56/health-app.git
+- Clone the repository: git clone https://github.com/datdt56/arent-health-app.git
 - Install dependencies: 
 ```bash
 yarn install
