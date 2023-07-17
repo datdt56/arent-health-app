@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Inter&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+/*body:lang(en){*/
+/*  font-family: "Inter";*/
+/*  font-weight: 400;*/
+/*}*/
+
+.custom-container{
+  max-width: 960px;
+  margin: 0px auto;
+}
+
+.footer{
+  font-size: 11px;
+  font-weight: 300;
+  line-height: 16px;
+  letter-spacing: 0.033px;
+}
+
+#achievement-rate span{
+  color: #FFF;
+  text-shadow: 0px 0px 6px 0px #FCA500;
+  font-weight: 400;
+  filter: drop-shadow(0px 0px 6px #FC7400);
+}
+
+.exercise-name::before {
+  display: inline-block;
+  position: absolute;
+  left: -16px;
+  top: 7px;
+  content: "";
+  width: 3px;
+  height: 3px;
+  border-radius: 50px;
+  background-color: white;
+}
+.exercise::-webkit-scrollbar {
+  width: 6px;
+}
+.exercise::-webkit-scrollbar-track {
+  background: #777777;
+}
+.exercise::-webkit-scrollbar-thumb {
+  background: #FFCC21;
+  border-radius: 5px;
+}
